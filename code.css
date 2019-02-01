@@ -1,0 +1,240 @@
+/*logo*/
+
+.logo{
+    margin-top:12px;
+    height:15px;
+    width:15px;
+}
+/*img1*/
+
+.img1{
+    margin-top:12px;
+    margin-left:30px;
+    height:30px;
+    width:25px;
+}  
+/*img2*/
+.img2{
+    margin-top:12px;
+    margin-left:20px;
+    height:25px;
+    width:25px;
+}
+/*headerr*/
+.headerr{
+    height:50px;
+}
+/*side navigation */
+
+
+.sidenav {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*hr */
+hr{
+border:0.5px solid lightgrey;
+}
+
+
+/* google notes search */
+.google_search input[type=text] {
+    height:40px;
+    margin-top:6px;
+    width: 90%;
+    box-sizing: border-box;
+    border: 0px solid grey;
+    border-radius: 0px;
+    font-size: 16px;
+    background-color: #ffd633;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+
+/* secound navigation 
+
+
+.div1 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+*/
+.nav_1 input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 10px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav_1 input[type=text]:focus {
+    width: 60%;
+}
+
+
+.bp-nav__item {
+    position: relative;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.1em;
+    text-align: left;
+    border-radius: 10px;
+}
+
+bp-nav__item > span {
+    display: none;
+}
+
+.bp-nav__item:hover:before {
+    content: attr(data-info);
+    font-size: 0.85em;
+    font-weight: bold;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 600%;
+    text-align: right;
+    pointer-events: none;
+    color: grey;
+}
+
+.bp-nav__item:hover {
+    background: yellow;
+}
+
+.bp-icon:after {
+    font-family: 'bpicons';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    text-transform: none;
+    color: #5c5edc;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+}
+
+ .bp-icon:after {
+    line-height: 2.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: 0;
+}
+
+.bp-icon--archive:after {
+    content: '\e002';
+}
+
+/*cards*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    height:70%;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 5px 20px;
+}
+
+/*ul li
+ul li{
+    list-style-type:none;
+    float:left;
+}
+*/
+  .slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

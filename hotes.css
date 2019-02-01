@@ -1,0 +1,96 @@
+* {
+		    box-sizing: border-box;
+		}
+
+		.row::after {
+		    content: "";
+		    clear: both;
+		    display: block;
+		}
+
+		[class*="col-"] {
+		    float: left;
+		 }
+
+		html {
+		    font-family: "Lucida Sans", sans-serif;
+		}
+
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		@media only screen and (max-width: 768px) {
+		 
+		    [class*="col-"] {
+		        width: 100%;
+		    }
+		}
+
+
+
+body {
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	margin: 0;
+	color: #cecece;
+	background: #2a2b30;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+a:hover {
+	color: #ddd;
+}
+/*vertical line */
+
+.vr{
+	margin-left:200px;
+}
+
+/* cards */
+.card {
+    box-shadow: 0 4px 8px 0 blue;
+    transition: 0.3s;
+    width: 20%;
+    height:70%;
+    float:left;
+    margin-left:20px;
+    margin-top:10px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 grey;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+input[type=text],textarea {
+   width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+ hr{
+ 	color:lightgrey;
+ }

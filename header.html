@@ -1,0 +1,63 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<title> Google Keep UI </title>
+		<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- code.css -->
+		<link rel="stylesheet" type="text/css" href="hotes.css">
+
+		<!-- coded.js -->
+		
+
+	</head>
+
+	<body>
+		
+<!--add notes -->
+			<div class="row">
+				<div class="col-3">
+
+				<br><br>
+					<a id="add" href="#logo"><img src="image\plus.png" alt="plus" style="margin-left:20px;width:20px;height:20px;background-color:white">
+					&nbsp&nbsp Add New Notes </a></li>
+						
+						
+						<hr width="1" size="500" class="vr">
+				</div>
+				
+				
+
+				<div class="col-9">
+			
+					<div class="card">
+
+					  <div class="container">
+					   
+       					 <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+        				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				<!--	    -->
+					  </div>
+					  	<a type="button"><img src="image\archive.png" height="20px" width="20px" style="margin-left:20px;background-color:grey;"></a>
+					    <a type="button"><img src="image\color.png" height="20px" width="20px" style="margin-left:20px;background-color:grey;"></a>
+					    <a type="button"><img src="image\delete.png" height="20px" width="20px" style="margin-left:20px;background-color:grey;"></a>
+					</div>
+	
+					<div id="cards"></div>
+			</div>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script type="text/javascript">
+						$(document).ready(function(){
+						    $("#add").click(function(){
+						        $("#cards").append('<div class="card"><div class="container"><input type="text" id="lname" name="lastname" placeholder="Your last name.."><textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea></div><a type="button"><img src="image\archive.png" height="20px" width="20px"style="margin-left:20px;background-color:grey;"></a><a type="button"><img src="image\color.png" height="20px" width="20px" style="margin-left:20px;background-color:grey;"></a><a type="button"><img src="image\delete.png" height="20px" width="20px" style="margin-left:20px;background-color:grey;"></a></div>');
+						    });
+						});
+</script>
+
+	</body>
+
+</html>
