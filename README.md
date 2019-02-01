@@ -1,6 +1,6 @@
 # Sticky Notes
 
-Sticky Notes using Bootstrap for making it responsive, css for styling, javascript for adding sticky notes.
+Using Bootstrap for making it responsive, css for styling, javascript for adding sticky notes.
 
 # Screenshot
 
